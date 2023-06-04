@@ -1,9 +1,7 @@
 <template>
   <div>
     <h1>Tela Login</h1>
-    <p>
-      a long established fact that a reader will be distracted by the readable
-    </p>
+    <p>ZE DA MANGA</p>
     <MenuItem />
   </div>
 </template>
