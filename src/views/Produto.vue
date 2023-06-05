@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>Tela Produto</h1>
-  <router-link to="/">voltar</router-link>
+    <router-link to="/">voltar</router-link>
   </div>
 </template>
 
 <script>
-export default {name:"ProdutoTela"};
+export default { name: "ProdutoTela" };
 </script>
 
 <style scoped>
