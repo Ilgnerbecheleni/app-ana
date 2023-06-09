@@ -25,11 +25,13 @@ export default {
 <style>
 .card {
     font-family: 'Open Sans', sans-serif;
-  background: #ddd;
+
   width: 155px;
   height: 245px;
   border-radius: 14px;
   overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
+  box-shadow: -3px 10px 22px 6px rgba(0,0,0,0.1);
+  margin:5px;
 }
 
 .card-img {
