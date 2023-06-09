@@ -15,7 +15,7 @@ export default {
 
 <style>
 .cabecalho1{
-    
+    z-index: 999;
     width: 100%;
     height: 205px;
     background-color: rgb(172, 156, 156);

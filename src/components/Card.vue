@@ -26,7 +26,7 @@ export default {
 .card {
     font-family: 'Open Sans', sans-serif;
   background: #ddd;
-  width: 145px;
+  width: 155px;
   height: 245px;
   border-radius: 14px;
   overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
@@ -34,7 +34,7 @@ export default {
 
 .card-img {
 
-  width: 145px;
+  width: 155px;
   height: 151px;
    object-fit: cover;
   mask-image: linear-gradient(to bottom, transparent 50%, white 100%); /* Máscara de corte */
