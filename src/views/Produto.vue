@@ -8,10 +8,10 @@
     <main class="produto">
       <h2>Pelúcias Coelho e Rena</h2>
 
-      <p id="textImg">
+      <h4>
         Vendo dois pelúcias, um coelho castanho e uma rena castanho claro, que
         se encontram em um ótimo estado.
-      </p>
+      </h4>
 
       <div class="descricao">
         <p id="cinza">categoria:</p>
@@ -60,15 +60,17 @@ export default { name: "ProdutoTela", comments: { ProdutoTela } };
   font-weight: bold;
 }
 
-.descricao {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-}
-#textImg {
+.produto > h4 {
   font-family: Open sans-serif;
   line-height: 22px;
   color: #aca9a5;
 }
+
+.descricao {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
 #cinza {
   font-family: Open sans-serif;
   color: #aca9a5;
