@@ -4,7 +4,8 @@
     <h2 class="homeh2">vistos recentemente</h2>
 <section class="telaHome">
 <div class="wrapper">
-  <Card />
+  <router-link to="/produto" class="linkcard"><Card /></router-link>
+    <Card />
     <Card />
     <Card />
 </div>
@@ -12,7 +13,7 @@
   </section>
   <h2 class="homeh2">Recomendados</h2>
   <section class="recomendados">
-  <Card />
+    <router-link to="/produto" class="linkcard"><Card /></router-link>
     <Card />
     <Card />
     <Card />
@@ -59,5 +60,10 @@ export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card } };
  align-items: center;
  margin-left:20px;
  gap:15px;
+}
+.linkcard{
+  font-family: 'Open Sans', sans-serif;
+text-decoration: none;
+color: black;
 }
 </style>

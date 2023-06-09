@@ -25,7 +25,7 @@ export default {
 <style>
 .card {
     font-family: 'Open Sans', sans-serif;
-
+text-decoration: none;
   width: 155px;
   height: 245px;
   border-radius: 14px;

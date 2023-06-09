@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <router-link to="/">voltar</router-link>
+      <router-link to="/home">voltar</router-link>
       <h1>IMAGEM BACKGROUND FICARÁ AQUI!</h1>
     </header>
 
