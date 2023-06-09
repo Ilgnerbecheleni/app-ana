@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Tela Login</h1>
-    <p>ZE DA MANGA</p>
     <MenuItem />
   </div>
 </template>

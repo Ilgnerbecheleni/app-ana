@@ -40,7 +40,8 @@
 </template>
 
 <script>
-export default { name: "ProdutoTela" };
+import ProdutoTela from "../components/Produto.vue";
+export default { name: "ProdutoTela", comments: { ProdutoTela } };
 </script>
 
 <style scoped>
