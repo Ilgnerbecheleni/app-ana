@@ -1,6 +1,15 @@
 <template>
     <section class="card">
-    <img src="../assets/img/18.jpg" alt="" srcset="" class="cardimg">
+    <div class="card">
+ <img src="../assets/img/18.jpg" alt="" srcset="" class="card-img">
+  <div class="card-items">
+    <img src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png" alt="Coração" class="heart-icon">
+    <h4 class="price">43,00 </h4>
+    <p class="desc">Urso Pelucia</p>
+  </div>
+</div>
+    
+
     </section>
         
     
@@ -14,18 +23,37 @@ export default {
 </script>
 
 <style>
-.card{
-    border-radius: 12px;
-    width: 148px;
-    height: 246px;
-    background-color: rgb(233, 220, 220);
-
+.card {
+    font-family: 'Open Sans', sans-serif;
+  background: #ddd;
+  width: 145px;
+  height: 245px;
+  border-radius: 14px;
+  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
 }
-.cardimg{
-    border-radius:  12px  12px 0 0 ;
-    max-width: 148px;
-    max-height: 151px;
-    height: 151px;
-    width: 100%;
+
+.card-img {
+
+  width: 145px;
+  height: 151px;
+   object-fit: cover;
+  mask-image: linear-gradient(to bottom, transparent 50%, white 100%); /* Máscara de corte */
+}
+.price{
+  margin:15px 0 0 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.card-items{
+  position:relative;
+}
+.desc{
+  margin: 9px 0  0 15px;
+  font-size:0.8em;
+}
+
+.heart-icon{
+  position:absolute;
+  right:15px;
+  width:20px;
 }
 </style>
