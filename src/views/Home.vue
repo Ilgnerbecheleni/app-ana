@@ -1,7 +1,7 @@
 <template>
   <div >
     <Cabecalho1 />
-    <h2>vistos recentemente</h2>
+    <h2 class="homeh2">vistos recentemente</h2>
 <section class="telaHome">
 <div class="wrapper">
   <Card />
@@ -10,7 +10,7 @@
 </div>
 
   </section>
-  <h3>Recomendados</h3>
+  <h2 class="homeh2">Recomendados</h2>
   <section class="recomendados">
   <Card />
     <Card />
@@ -46,6 +46,12 @@ export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card } };
   gap: 10px; /* Espaçamento entre os cards */
 }
 
+.homeh2{
+  margin-left: 15px;
+  text-align: start;
+  font-family: 'Open Sans', sans-serif;
+
+}
 .recomendados{
   display: grid;
  grid-template-columns: 1fr 1fr;
