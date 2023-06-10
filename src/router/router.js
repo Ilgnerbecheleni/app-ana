@@ -8,6 +8,8 @@ import ListaTela from "../views/Lista";
 import ProdutoTela from "../views/Produto";
 import FavoritosTela from "../views/Favoritos";
 import PerfilTela from "../views/Perfil";
+import NotificacoesTela from "../views/notificacoes.vue";
+
 Vue.use(VueRouter);
 const routes = [
   {
@@ -44,6 +46,11 @@ const routes = [
     path: "/perfil",
     name: "PerfilTela",
     component: PerfilTela
+  },
+  {
+    path: "/notificacoes",
+    name: "NotificacoesTela",
+    component: NotificacoesTela
   }
 ];
 

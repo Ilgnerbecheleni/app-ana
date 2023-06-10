@@ -8,12 +8,13 @@
       <Card />
     </section>
 
-    <MenuItem />
+    <MenuItem :should-display="shouldDisplay" />
   </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
+<<<<<<< HEAD
 import Card from "@/components/Card.vue";
 import CabecalhoFavoritos from "../components/CabecalhoFavoritos.vue";
 export default {
@@ -45,4 +46,22 @@ export default {
   text-decoration: none;
   color: black;
 }
+=======
+export default { name: "FavoritosTela", components: { MenuItem } ,
+methods: {
+    updateActiveImage(imageSrc) {
+      this.activeImage = imageSrc;
+    },
+  },
+  data(){
+    return {
+      activeImage: "../assets/menu/icon favoritos on.png",
+      shouldDisplay: true,
+    };
+  }, };
+</script>
+
+<style scoped>
+
+>>>>>>> 548d2704548e68903093fc8bb8335d25db8fea48
 </style>

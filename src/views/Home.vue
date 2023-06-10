@@ -22,7 +22,7 @@
 </section>
 
  
-    <MenuItem />
+<MenuItem :should-display="shouldDisplay" />
   </div>
 </template>
 
@@ -30,7 +30,17 @@
 import Cabecalho1 from "../components/Cabecalho1.vue";
 import MenuItem from "../components/Menu.vue";
 import Card from "@/components/Card.vue";
-export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card } };
+export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card },
+methods: {
+    updateActiveImage(imageSrc) {
+      this.activeImage = imageSrc;
+    },
+  },
+  data() {
+    return {
+      shouldDisplay: true,
+    };
+  },};
 </script>
 
 <style scoped>
@@ -47,11 +57,11 @@ export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card } };
   gap: 10px; /* Espaçamento entre os cards */
 }
 
-.homeh2{
+.homeh2
+{
   margin-left: 15px;
   text-align: start;
   font-family: 'Open Sans', sans-serif;
-
 }
 .recomendados{
   display: grid;

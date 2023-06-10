@@ -1,13 +1,23 @@
 <template>
   <div>
     <h1>Tela Notificacoes</h1>
-    <MenuItem />
+    <MenuItem :should-display="shouldDisplay" />
   </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name: "NotificacoesTela", components: { MenuItem } };
+export default { name: "NotificacoesTela", components: { MenuItem },
+methods: {
+    updateActiveImage(imageSrc) {
+      this.activeImage = imageSrc;
+    },
+  },
+  data() {
+    return {
+      shouldDisplay: true,
+    };
+  }, };
 </script>
 
 <style scoped>
