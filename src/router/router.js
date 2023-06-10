@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import HomeTela from "../views/Home";
 import VenderTela from "../views/Vender";
 import ProdutoTela from "../views/Produto";
-import FavoritosTela from "../views/Favoritos";
+import FavoritosTela from "../views/Favoritos.vue";
 import PerfilTela from "../views/Perfil";
 import NotificacoesTela from "../views/notificacoes.vue";
 

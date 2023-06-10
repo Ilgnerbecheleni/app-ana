@@ -1,16 +1,16 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav class="menu" :style="{ display: shouldDisplay ? 'flex' : 'none' }">
-    <router-link to="/home" @click="updateActiveImage(explorarOnImage)">
-      <img :src="explorarOnImage" alt="Explorar" />
+    <router-link to="/home">
+      <img :src="homeDisplay?activeImages['homeOn']:activeImage['homeOff']" alt="Explorar" />
     </router-link>
-    <router-link to="/favoritos" @click="updateActiveImage(favoritosOffImage)">
+    <router-link to="/favoritos">
       <img :src="favoritosOffImage" alt="Favoritos" />
     </router-link>
-    <router-link to="/vender" @click="updateActiveImage(venderOffImage)">
+    <router-link to="/vender">
       <img :src="venderOffImage" alt="Vender" />
     </router-link>
-    <router-link to="/notificacoes" @click="updateActiveImage(notificacoesOffImage)">
+    <router-link to="/notificacoes" >
       <img :src="notificacoesOffImage" alt="Notificações" />
     </router-link>
   </nav>
@@ -46,8 +46,8 @@ export default {
       activeImages: {
         "homeOn": explorarOnImage,
         "homeOff": explorarOffImage,
-        "loginOn": venderOffImage,
-        "loginOff": venderOnImage,
+        "venderOff": venderOffImage,
+        "venderOn": venderOnImage,
         "favoritosOn": favoritosOnImage,
         "favoritosOff": favoritosOffImage,
         "notificacoesOn": notificacoesOnImage,
@@ -63,6 +63,7 @@ export default {
   shouldDisplay: {
     type: Boolean,
     required: true
+    
   },
   homeDisplay: {
     type: Boolean,
@@ -73,6 +74,10 @@ export default {
     required: true
   },
   loginDisplay: {
+    type: Boolean,
+    required: true
+  },
+  venderDisplay: {
     type: Boolean,
     required: true
   },

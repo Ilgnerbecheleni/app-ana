@@ -5,7 +5,7 @@
     <Cabecalho1/>
     
  
-  <MenuItem class="mobile-menu"  :active-image="explorarOnImage"/>
+  <MenuItem :active-image="explorarOnImage"/>
    
    </div>
 </template>

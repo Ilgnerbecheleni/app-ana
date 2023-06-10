@@ -39,11 +39,10 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-      homeSrc: "../assets/menu/icon explorar on.png",
-      favoritosSrc: "../assets/menu/icon favoritos off.png",
-      venderSrc: "../assets/menu/icon vender off.png",
-      notificacoesSrc: "../assets/menu/icon notificações off.png",
-      perfilSrc: "../assets/menu/icon perfil off.png"
+      homeDisplay:true,
+      favoritosDisplay:true,
+      loginDisplay:true,
+      venderDisplay:true,
     };
   },};
 </script>

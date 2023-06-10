@@ -27,6 +27,8 @@ export default {
   background-color: rgb(172, 156, 156);
   position: fixed;
   top: 0;
+  object-fit: contain;
+
   display: flex;
   align-items: start;
   padding-left: 0;
