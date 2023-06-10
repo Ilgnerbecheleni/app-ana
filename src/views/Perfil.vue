@@ -3,7 +3,7 @@
     <h1>Tela Perfil</h1>
     <MenuItem
       :should-display="shouldDisplay"
-      :homeDisplay="true"
+      :homeDisplay="false"
       :favoritosDisplay="false"
       :perfilDisplay="true"
       :venderDisplay="false"
