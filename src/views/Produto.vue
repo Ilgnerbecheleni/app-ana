@@ -36,12 +36,20 @@
 
       <button>CONVERSAR</button>
     </main>
+    <MenuItem :should-display="shouldDisplay" />
   </div>
+ 
 </template>
 
 <script>
+import MenuItem from "../components/Menu.vue";
 import ProdutoTela from "../components/Produto.vue";
-export default { name: "ProdutoTela", comments: { ProdutoTela } };
+export default { name: "ProdutoTela", comments: { ProdutoTela,MenuItem },
+data() {
+    return {
+      shouldDisplay: false,
+    };
+  } };
 </script>
 
 <style scoped>

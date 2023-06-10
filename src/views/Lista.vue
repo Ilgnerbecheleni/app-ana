@@ -1,13 +1,25 @@
 <template>
   <div>
     <h1>Tela Lista</h1>
-    <MenuItem />
+    <MenuItem :should-display="shouldDisplay" />
   </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name: "ListaTela", components: { MenuItem } };
+export default { name: "ListaTela", components: { MenuItem },
+
+methods: {
+    updateActiveImage(imageSrc) {
+      this.activeImage = imageSrc;
+    },
+  },
+  data(){
+    return {
+      activeImage: "../assets/menu/icon explorar on.png",
+      shouldDisplay: true,
+    };
+  } };
 </script>
 
 <style scoped>

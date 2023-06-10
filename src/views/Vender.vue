@@ -12,7 +12,12 @@
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name:"VenderTela",components: { MenuItem } };
+export default { name:"VenderTela",components: { MenuItem },
+methods: {
+    updateActiveImage(imageSrc) {
+      this.activeImage = imageSrc;
+    },
+  }, };
 </script>
 
 <style scoped>
