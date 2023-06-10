@@ -38,19 +38,20 @@
     </main>
     <MenuItem :should-display="shouldDisplay" />
   </div>
- 
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
 import ProdutoTela from "../components/Produto.vue";
-export default { name: "ProdutoTela", comments: { ProdutoTela,MenuItem },
-data() {
+export default {
+  name: "ProdutoTela",
+  comments: { ProdutoTela, MenuItem },
+  data() {
     return {
       shouldDisplay: false,
-     
     };
-  } };
+  },
+};
 </script>
 
 <style scoped>
@@ -91,6 +92,7 @@ button {
   border: 0;
   height: 50px;
   width: 300px;
+  margin: 20px;
 }
 
 .imgProduto {
