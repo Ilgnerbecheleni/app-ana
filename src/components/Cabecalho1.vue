@@ -5,7 +5,7 @@
       <h2>user_name</h2>
       <div class="search">
         <img
-          src=""
+          src="../assets/home/fundo explorar.png"
           alt=""
           class="searchimg"
         />
