@@ -1,6 +1,12 @@
 <template>
   <div>
-    <h1>Tela Favoritos</h1>
+    <CabeçalhoFavoritos />
+    <section class="recomendados">
+      <router-link to="/produto" class="linkcard"><Card /></router-link>
+      <Card />
+      <Card />
+      <Card />
+    </section>
 
     <MenuItem />
   </div>
@@ -8,17 +14,35 @@
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name: "FavoritosTela", components: { MenuItem } };
+import Card from "@/components/Card.vue";
+import CabecalhoFavoritos from "../components/CabecalhoFavoritos.vue";
+export default {
+  name: "HomeTela",
+};
 </script>
 
 <style scoped>
-.mobile-menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3;
-  /* Outros estilos que você desejar */
+.wrapper {
+  display: inline-flex;
+  gap: 10px; /* Espaçamento entre os cards */
+}
+
+.homeh2 {
+  margin-left: 15px;
+  text-align: start;
+  font-family: "Open Sans", sans-serif;
+}
+.recomendados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 20px;
+  gap: 15px;
+}
+.linkcard {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 </style>
