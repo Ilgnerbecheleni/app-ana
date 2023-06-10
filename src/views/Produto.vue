@@ -2,7 +2,7 @@
   <div>
     <header>
       <router-link to="/home">voltar</router-link>
-      <h1>IMAGEM BACKGROUND FICARÁ AQUI!</h1>
+      <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
     </header>
 
     <main class="produto">
@@ -54,15 +54,6 @@ data() {
 </script>
 
 <style scoped>
-.mobile-menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 3;
-}
-
 .produto > h2 {
   font-family: Open sans-serif;
   line-height: 22px;
@@ -100,5 +91,9 @@ button {
   border: 0;
   height: 50px;
   width: 300px;
+}
+
+.imgProduto {
+  width: 360px;
 }
 </style>
