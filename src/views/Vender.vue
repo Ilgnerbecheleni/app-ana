@@ -5,7 +5,7 @@
     <Cabecalho1/>
     
  
-  <MenuItem class="mobile-menu" />
+  <MenuItem class="mobile-menu"  :active-image="explorarOnImage"/>
    
    </div>
 </template>
@@ -16,8 +16,18 @@ export default { name:"VenderTela",components: { MenuItem },
 methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
-    },
-  }, };
+    }
+  },
+  data() {
+    return {
+      shouldDisplay: true,
+      homeSrc: "../assets/menu/icon explorar on.png",
+      favoritosSrc: "../assets/menu/icon favoritos off.png",
+      venderSrc: "../assets/menu/icon vender off.png",
+      notificacoesSrc: "../assets/menu/icon notificações off.png",
+      perfilSrc: "../assets/menu/icon perfil off.png"
+    };
+  } };
 </script>
 
 <style scoped>

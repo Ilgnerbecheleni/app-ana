@@ -2,7 +2,7 @@
   <div>
     <h1>Tela Favoritos</h1>
 
-    <MenuItem :should-display="shouldDisplay" />
+   <MenuItem :should-display="shouldDisplay" />
   </div>
 </template>
 
@@ -14,11 +14,12 @@ methods: {
       this.activeImage = imageSrc;
     },
   },
-  data(){
+  data() {
     return {
-      activeImage: "../assets/menu/icon favoritos on.png",
       shouldDisplay: true,
+    
     };
+  
   }, };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Tela Perfil</h1>
-    <MenuItem :should-display="shouldDisplay" />
+    <MenuItem :should-display="shouldDisplay"  :active-image="explorarOnImage"/>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default { name: "PerfilTela", components: { MenuItem } ,  methods: {
   data() {
     return {
       shouldDisplay: true,
+      
     };
   },};
 </script>

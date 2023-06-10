@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Tela Notificacoes</h1>
-    <MenuItem :should-display="shouldDisplay" />
+    <MenuItem :should-display="shouldDisplay"  :active-image="explorarOnImage"/>
   </div>
 </template>
 
@@ -16,6 +16,11 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
+      homeSrc: "../assets/menu/icon explorar off.png",
+      favoritosSrc: "../assets/menu/icon favoritos off.png",
+      venderSrc: "../assets/menu/icon vender off.png",
+      notificacoesSrc: "../assets/menu/icon notificações on.png",
+      perfilSrc: "../assets/menu/icon perfil off.png"
     };
   }, };
 </script>

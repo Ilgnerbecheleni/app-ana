@@ -48,6 +48,7 @@ export default { name: "ProdutoTela", comments: { ProdutoTela,MenuItem },
 data() {
     return {
       shouldDisplay: false,
+     
     };
   } };
 </script>

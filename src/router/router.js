@@ -3,8 +3,6 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomeTela from "../views/Home";
 import VenderTela from "../views/Vender";
-import LoginTela from "../views/Login";
-import ListaTela from "../views/Lista";
 import ProdutoTela from "../views/Produto";
 import FavoritosTela from "../views/Favoritos";
 import PerfilTela from "../views/Perfil";
@@ -17,20 +15,10 @@ const routes = [
     name: "HomeTela",
     component: HomeTela
   },
-  {
-    path: "/login",
-    name: "LoginTela",
-    component: LoginTela
-  },
-  {
+    {
     path: "/vender",
     name: "VenderTela",
     component: VenderTela
-  },
-  {
-    path: "/lista",
-    name: "ListaTela",
-    component: ListaTela
   },
   {
     path: "/produto",
