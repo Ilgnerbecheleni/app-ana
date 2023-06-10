@@ -1,10 +1,7 @@
 <template>
-  
-   <div>
-   
-    <Cabecalho1/>
-    
- 
+  <div>
+    <Cabecalho1 />
+
     <MenuItem
       :should-display="shouldDisplay"
       :homeDisplay="false"
@@ -12,24 +9,26 @@
       :perfilDisplay="false"
       :venderDisplay="true"
     />
-   
-   </div>
+  </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
 import Cabecalho1 from "../components/Cabecalho1.vue";
-export default { name:"VenderTela",components: { MenuItem,Cabecalho1 },
+export default {
+  name: "VenderTela",
+  components: { MenuItem, Cabecalho1 },
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay:false,
-      favoritosDisplay:false,
-      loginDisplay:false,
-      venderDisplay:true,
-      perfilDisplay:true
-        };
-  } };
+      homeDisplay: false,
+      favoritosDisplay: false,
+      loginDisplay: false,
+      venderDisplay: true,
+      perfilDisplay: true,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -40,6 +39,6 @@ export default { name:"VenderTela",components: { MenuItem,Cabecalho1 },
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 3;
-  /* Outros estilos que você desejar */
+  /* Outros estilos que você desejarrrr */
 }
 </style>
