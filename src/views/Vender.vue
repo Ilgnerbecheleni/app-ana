@@ -21,14 +21,9 @@ export default {
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay: false,
-      favoritosDisplay: false,
-      loginDisplay: false,
-      venderDisplay: true,
-      perfilDisplay: true,
-    };
-  },
-};
+     
+        };
+  } };
 </script>
 
 <style scoped>
