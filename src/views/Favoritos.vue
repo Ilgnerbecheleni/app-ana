@@ -2,7 +2,6 @@
   <div>
     <h1>Tela Favoritos</h1>
 
-    <p>teste.</p>
     <MenuItem />
   </div>
 </template>

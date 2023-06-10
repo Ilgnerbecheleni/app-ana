@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Tela Lista</h1>
-    <p>a ZE DA MANGA</p>
     <MenuItem />
   </div>
 </template>
