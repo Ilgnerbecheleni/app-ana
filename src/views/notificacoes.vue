@@ -1,14 +1,23 @@
 <template>
   <div>
     <h1>Tela Notificacoes</h1>
-    <MenuItem :should-display="shouldDisplay"  :active-image="explorarOnImage"/>
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="false"
+      :favoritosDisplay="false"
+      :perfilDisplay="false"
+      :venderDisplay="false"
+      :notificacoesDisplay="true"
+    />
   </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name: "NotificacoesTela", components: { MenuItem },
-methods: {
+export default {
+  name: "NotificacoesTela",
+  components: { MenuItem },
+  methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
     },
@@ -16,13 +25,14 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-      homeSrc: "../assets/menu/icon explorar off.png",
-      favoritosSrc: "../assets/menu/icon favoritos off.png",
-      venderSrc: "../assets/menu/icon vender off.png",
-      notificacoesSrc: "../assets/menu/icon notificações on.png",
-      perfilSrc: "../assets/menu/icon perfil off.png"
+      homeDisplay: true,
+      favoritosDisplay: true,
+      loginDisplay: true,
+      venderDisplay: true,
+      perfilDisplay: true,
     };
-  }, };
+  },
+};
 </script>
 
 <style scoped>

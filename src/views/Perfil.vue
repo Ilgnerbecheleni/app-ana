@@ -1,13 +1,21 @@
 <template>
   <div>
     <h1>Tela Perfil</h1>
-    <MenuItem :should-display="shouldDisplay"  :active-image="explorarOnImage"/>
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="true"
+      :favoritosDisplay="false"
+      :perfilDisplay="true"
+      :venderDisplay="false"
+      :notificacoesDisplay="false"
+    />
   </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name: "PerfilTela", components: { MenuItem } ,  methods: {
+export default { name: "PerfilTela", components: { MenuItem } , 
+ methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
     },
@@ -15,7 +23,11 @@ export default { name: "PerfilTela", components: { MenuItem } ,  methods: {
   data() {
     return {
       shouldDisplay: true,
-      
+      homeDisplay:true,
+      favoritosDisplay:true,
+      loginDisplay:true,
+      venderDisplay:true,
+      perfilDisplay:true
     };
   },};
 </script>

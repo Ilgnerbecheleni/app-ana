@@ -5,28 +5,30 @@
     <Cabecalho1/>
     
  
-  <MenuItem :active-image="explorarOnImage"/>
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="false"
+      :favoritosDisplay="false"
+      :perfilDisplay="false"
+      :venderDisplay="true"
+    />
    
    </div>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-export default { name:"VenderTela",components: { MenuItem },
-methods: {
-    updateActiveImage(imageSrc) {
-      this.activeImage = imageSrc;
-    }
-  },
+import Cabecalho1 from "../components/Cabecalho1.vue";
+export default { name:"VenderTela",components: { MenuItem,Cabecalho1 },
   data() {
     return {
       shouldDisplay: true,
-      homeSrc: "../assets/menu/icon explorar on.png",
-      favoritosSrc: "../assets/menu/icon favoritos off.png",
-      venderSrc: "../assets/menu/icon vender off.png",
-      notificacoesSrc: "../assets/menu/icon notificações off.png",
-      perfilSrc: "../assets/menu/icon perfil off.png"
-    };
+      homeDisplay:false,
+      favoritosDisplay:false,
+      loginDisplay:false,
+      venderDisplay:true,
+      perfilDisplay:true
+        };
   } };
 </script>
 

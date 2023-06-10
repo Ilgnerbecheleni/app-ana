@@ -22,7 +22,16 @@
 </section>
 
  
-<MenuItem :should-display="shouldDisplay"  :active-image="explorarOnImage"/>
+<MenuItem 
+:should-display="shouldDisplay"  
+:homeDisplay="true"
+:favoritosDisplay="false"
+:perfilDisplay="false"
+:venderDisplay="false"
+:notificacoesDisplay="false"
+
+
+/>
   </div>
 </template>
 

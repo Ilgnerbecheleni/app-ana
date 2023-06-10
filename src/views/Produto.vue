@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <router-link to="/home">voltar</router-link>
+      <router-link to="/">voltar</router-link>
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
     </header>
 
@@ -36,7 +36,13 @@
 
       <button>CONVERSAR</button>
     </main>
-    <MenuItem :should-display="shouldDisplay" />
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="true"
+      :favoritosDisplay="false"
+      :perfilDisplay="false"
+      :venderDisplay="false"
+    />
   </div>
 </template>
 
@@ -49,6 +55,11 @@ export default {
   data() {
     return {
       shouldDisplay: false,
+      homeDisplay:true,
+      favoritosDisplay:true,
+      loginDisplay:true,
+      venderDisplay:true,
+      perfilDisplay:true
     };
   },
 };

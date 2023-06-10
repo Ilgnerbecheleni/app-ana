@@ -11,7 +11,7 @@ import NotificacoesTela from "../views/notificacoes.vue";
 Vue.use(VueRouter);
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "HomeTela",
     component: HomeTela
   },
