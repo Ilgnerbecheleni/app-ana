@@ -8,7 +8,14 @@
       <Cardfavoritos />
     </section>
 
-   <MenuItem :should-display="shouldDisplay" />
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="false"
+      :favoritosDisplay="true"
+      :loginDisplay="false"
+      :venderDisplay="false"
+      :notificacoesDisplay="false"
+    />
   </div>
 </template>
 
@@ -25,7 +32,11 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-    
+      homeDisplay:true,
+      favoritosDisplay:true,
+      loginDisplay:true,
+      venderDisplay:true,
+      perfilDisplay:true
     };
   
   }, };

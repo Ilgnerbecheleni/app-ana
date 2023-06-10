@@ -1,18 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav class="menu" :style="{ display: shouldDisplay ? 'flex' : 'none' }">
-    <router-link to="/home">
-      <img :src="homeDisplay?activeImages['homeOn']:activeImage['homeOff']" alt="Explorar" />
-    </router-link>
-    <router-link to="/favoritos">
-      <img :src="favoritosOffImage" alt="Favoritos" />
-    </router-link>
-    <router-link to="/vender">
-      <img :src="venderOffImage" alt="Vender" />
-    </router-link>
-    <router-link to="/notificacoes" >
-      <img :src="notificacoesOffImage" alt="Notificações" />
-    </router-link>
+    <router-link to="/">
+  <img :src="!homeDisplay ? activeImages['homeOff'] : activeImages['homeOn']" alt="Explorar" />
+</router-link>
+<router-link to="/favoritos">
+  <img :src="!favoritosDisplay ? activeImages['favoritosOff'] : activeImages['favoritosOn']" alt="Favoritos" />
+</router-link>
+<router-link to="/vender">
+  <img :src="!venderDisplay ? activeImages['venderOff'] : activeImages['venderOn']" alt="Vender" />
+</router-link>
+<router-link to="/notificacoes" >
+  <img :src="!notificacoesDisplay ? activeImages['notificacoesOff'] : activeImages['notificacoesOn']" alt="Notificações" />
+</router-link>
+<router-link to="/perfil" >
+  <img :src="!perfilDisplay ? activeImages['perfiloff'] : activeImages['perfilon']" alt="Notificações" />
+</router-link>
   </nav>
 </template>
 
@@ -73,11 +76,15 @@ export default {
     type: Boolean,
     required: true
   },
-  loginDisplay: {
+  perfilDisplay: {
     type: Boolean,
     required: true
   },
   venderDisplay: {
+    type: Boolean,
+    required: true
+  },
+  notificacoesDisplay: {
     type: Boolean,
     required: true
   },
