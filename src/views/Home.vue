@@ -48,10 +48,7 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay:true,
-      favoritosDisplay:true,
-      loginDisplay:true,
-      venderDisplay:true,
+      
     };
   },};
 </script>

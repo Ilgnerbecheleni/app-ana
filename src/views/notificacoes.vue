@@ -25,11 +25,7 @@ export default {
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay: true,
-      favoritosDisplay: true,
-      loginDisplay: true,
-      venderDisplay: true,
-      perfilDisplay: true,
+    
     };
   },
 };

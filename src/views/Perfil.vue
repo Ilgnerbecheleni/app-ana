@@ -23,12 +23,7 @@ export default { name: "PerfilTela", components: { MenuItem } ,
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay:true,
-      favoritosDisplay:true,
-      loginDisplay:true,
-      venderDisplay:true,
-      perfilDisplay:true
-    };
+      };
   },};
 </script>
 

@@ -23,11 +23,7 @@ export default { name:"VenderTela",components: { MenuItem,Cabecalho1 },
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay:false,
-      favoritosDisplay:false,
-      loginDisplay:false,
-      venderDisplay:true,
-      perfilDisplay:true
+     
         };
   } };
 </script>

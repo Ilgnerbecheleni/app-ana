@@ -55,12 +55,7 @@ export default {
   data() {
     return {
       shouldDisplay: false,
-      homeDisplay:true,
-      favoritosDisplay:true,
-      loginDisplay:true,
-      venderDisplay:true,
-      perfilDisplay:true
-    };
+       };
   },
 };
 </script>
