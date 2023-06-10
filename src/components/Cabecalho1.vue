@@ -4,14 +4,15 @@
       <h1 class="title1">Bem vindo,</h1>
       <h2>user_name</h2>
       <div class="search">
-        <img
-          src="../assets/home/fundo explorar.png"
-          alt=""
-          class="searchimg"
-        />
+        <img src="../assets/home/icon pesquisar.png" alt="" class="searchimg" />
         <input type="text" />
       </div>
-    </nav>
+      <ul class="opcoes">
+        <li>para ti</li>
+        <li>pedidos em aberto</li>
+      </ul>
+     </nav>
+ 
   </header>
 </template>
 
@@ -32,6 +33,8 @@ export default {
   display: flex;
   align-items: start;
   padding-left: 0;
+  background: url("../assets/home/fundo explorar.png");
+  background-size: cover;
 }
 
 .searchimg {
@@ -50,7 +53,8 @@ export default {
 
 .search input[type="text"] {
   padding-left: 30px;
-  height: 25px;
+  width: 290px;
+  height: 42px;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -58,18 +62,37 @@ export default {
 .cabecalho-items {
   margin-left: 10px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.opcoes{
+  display: flex;
+  width: 100%;
+  justify-self: start;
+  justify-content: start;
+  gap:14px;
+
+}
+
+.opcoes li{
+  list-style: none;
+
+}
+
 h2 {
   margin-top: 0;
-  margin-bottom: 6px;
 }
 
 .title1 {
-  margin-top: 80px;
+  text-align: start;
+ margin-top: 40px; 
   margin-bottom: 0;
 }
 
 .cabecalho-items > h2 {
+  text-align: start;
   color: #f06943;
   line-height: 23px;
   font-weight: bold;
