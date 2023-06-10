@@ -11,7 +11,4 @@ export default {
 };
 </script>
 
-<style>
-.ProdutoTela {
-}
-</style>
+<style></style>
