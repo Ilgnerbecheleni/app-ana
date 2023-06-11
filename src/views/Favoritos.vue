@@ -11,6 +11,7 @@
           :image="item.image"
           :price="item.price"
           :description="item.description"
+          :heart="item.heart"
         />
       </router-link>
     </section>
