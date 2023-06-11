@@ -24,7 +24,7 @@
     <section class="recomendados">
       <router-link to="/produto" class="linkcard">
         <CardItem
-          image="produto.jpg"
+          image="3.jpg"
           price="48,00 € "
           description="coelho e rena de peluche"
           heart="icon coração on.png"
