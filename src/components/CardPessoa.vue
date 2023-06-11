@@ -1,6 +1,7 @@
 <template>
     <section class="card-pessoa">
-
+      <img src="../assets/img/pessoa.png" alt="pessoa">
+      
 
     </section>
         
@@ -32,22 +33,7 @@ text-decoration: none;
   height: 151px;
    object-fit: cover;
   mask-image: linear-gradient(to bottom, transparent 50%, white 100%); /* Máscara de corte */
-}
-.price{
-  margin:15px 0 0 15px;
-  font-family: 'Open Sans', sans-serif;
-}
-.card-pessoa-items{
-  position:relative;
-}
-.desc{
-  margin: 9px 0  0 15px;
-  font-size:0.8em;
+  border-radius: 100%;
 }
 
-.heart-icon{
-  position:absolute;
-  right:15px;
-  width:20px;
-}
 </style>
