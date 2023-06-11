@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .favoritos-view {
   padding-top: 210px;
-  height: 1120px;
+
 }
 
 .linkcard {

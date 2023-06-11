@@ -1,17 +1,17 @@
 <template>
   <section class="card">
-    <div class="card">
-      <img  :src="require(`@/assets/img/${image}`)" alt="" srcset="" class="item-img"  />
+         <img  :src="require(`@/assets/img/${image}`)" alt="" srcset="" class="item-img"  />
       <div class="card-items">
+       <div class="card-price-heart">
+       <h4 class="price">{{ price }}</h4>
         <img
           :src="require(`@/assets/home/${heart}`)"
           alt="Coração"
           class="heart-icon"
         />
-        <h4 class="price">{{ price }}</h4>
+       </div>
         <p class="desc">{{ description }}</p>
       </div>
-    </div>
   </section>
 </template>
 
@@ -37,6 +37,15 @@ export default {
   overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
   box-shadow: -3px 10px 22px 6px rgba(0, 0, 0, 0.1);
   margin: 5px;
+
+}
+
+.card-price-heart{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+
 }
 
 .item-img {
@@ -49,16 +58,21 @@ export default {
   font-family: "Open Sans", sans-serif;
 }
 .card-items {
-  position: relative;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .desc {
   margin: 9px 0 0 15px;
   font-size: 0.8em;
+  word-wrap: break-word;
+  width: 80%;
 }
 
 .heart-icon {
-  position: absolute;
-  right: 15px;
+height: 20px;
   width: 20px;
 }
 </style>
