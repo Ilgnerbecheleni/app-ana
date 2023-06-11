@@ -4,7 +4,7 @@
       <div class="card-utilizador-content">
 
       <div class="utilizador">
-        <h4>Nome Utilizador</h4>
+        <h4 class="nome-utilizador">Nome Utilizador</h4>
         <img src="../assets/produto/icon medalha.png" alt="" class="medalha">
       </div>
       <img src="../assets/produto/icon estrelas.png" alt="" class="estrelas">
@@ -43,7 +43,11 @@ export default {
   border-radius: 100%;
   margin-left: 15px;
 }
+.estrelas{
+  margin: 0;
+}
 .utilizador{
+  margin: 0;
   width: 180px;
   display: flex;
   justify-content: space-evenly;
@@ -53,6 +57,7 @@ export default {
   width: 14px;
   height: 14px;
 }
+
 
 .card-utilizador-content{
   display: flex;
