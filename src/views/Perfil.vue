@@ -9,12 +9,14 @@
       :venderDisplay="false"
       :notificacoesDisplay="false"
     />
+    <CardPessoa/>
   </div>
 </template>
 
 <script>
+import CardPessoa from "@/components/CardPessoa.vue";
 import MenuItem from "../components/Menu.vue";
-export default { name: "PerfilTela", components: { MenuItem } , 
+export default { name: "PerfilTela", components: { MenuItem, CardPessoa } , 
  methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
