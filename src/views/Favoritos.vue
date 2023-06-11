@@ -1,15 +1,18 @@
 <template>
   <div class="favoritos-view">
     <CabecalhoFavoritos />
-    <section v-for="item in  cardsFavoritos" :key="item.price" class="recomendados">
+    <section
+      v-for="item in cardsFavoritos"
+      :key="item.price"
+      class="recomendados"
+    >
       <router-link to="/produto" class="linkcard">
         <CardItem
-            :image="item.image"
-            :price="item.price"
-            :description="item.description"
-          />
+          :image="item.image"
+          :price="item.price"
+          :description="item.description"
+        />
       </router-link>
-
     </section>
 
     <MenuItem
@@ -46,18 +49,36 @@ export default {
       cardsFavoritos: [
         {
           image: "1.jpg",
-          price: "43,00",
-          description: "Urso Peluche",
+          price: "48,00 €",
+          description: "coelho e rena",
+          heart: "icon coração on.png",
         },
-    ]};
+        {
+          image: "18.jpg",
+          price: "20,00 € ",
+          description: "peluche coelho",
+          heart: "icon coração on.png",
+        },
+        {
+          image: "2.jpg",
+          price: "13,00 €",
+          description: "urso de peluche cizento",
+          heart: "icon coração on.png",
+        },
+        {
+          image: "4.jpg",
+          price: "17,00 €",
+          description: "boneca de peluche",
+          heart: "icon coração on.png",
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style scoped>
-
-.favoritos-view{
-  
+.favoritos-view {
   padding-top: 150px;
 }
 
