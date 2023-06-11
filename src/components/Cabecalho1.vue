@@ -8,9 +8,9 @@
           src="../assets/home/icon pesquisar.png"
           alt=""
           class="searchimg"
-          placeholder="pesquisar brinquedos ou utilizadores"
+         
         />
-        <input type="text" />
+        <input type="text"  placeholder="pesquisar brinquedos ou utilizadores" />
       </div>
       <ul class="opcoes">
         <li class="opcoes1">para ti</li>
@@ -77,6 +77,9 @@ export default {
   justify-self: start;
   justify-content: start;
   gap: 20px;
+  margin-top: 10px;
+  padding: 0;
+ 
 }
 
 .opcoes li {
@@ -108,6 +111,17 @@ h2 {
 .opcoes1 {
   font-weight: bold;
   font-family: Open sans-serif;
+ position: relative;
+  
+}
+
+.opcoes1::after{
+  content: '______';
+  position: absolute;
+  left: 0;
+  top:8px;
+  font-weight: bolder;
+  color: #f06943;
 }
 .opcoes2 {
   font-weight: bold;
