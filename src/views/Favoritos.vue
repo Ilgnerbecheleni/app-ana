@@ -7,6 +7,7 @@
             :image="item.image"
             :price="item.price"
             :description="item.description"
+            :heart="item.heart"
           />
       </router-link>
 
@@ -48,6 +49,7 @@ export default {
           image: "1.jpg",
           price: "43,00",
           description: "Urso Peluche",
+          heart:"icon coração on.png"
         },
     ]};
   },

@@ -9,6 +9,7 @@
             :image="item.image"
             :price="item.price"
             :description="item.description"
+            :heart="item.heart"
           />
         </router-link>
       </div>
@@ -30,8 +31,8 @@
 </template>
 
 <script>
-import Cabecalho1 from "../components/Cabecalho1.vue";
-import MenuItem from "../components/Menu.vue";
+import Cabecalho1 from "@/components/Cabecalho1.vue";
+import MenuItem from "@/components/Menu.vue";
 import CardItem from "@/components/CardItem.vue";
 export default {
   name: "HomeTela",
@@ -49,6 +50,7 @@ export default {
           image: "1.jpg",
           price: "43,00",
           description: "Urso Peluche",
+          heart:"icon coração off.png"
         },
 
         // Outros objetos com diferentes detalhes
@@ -56,16 +58,19 @@ export default {
           image: "18.jpg",
           price: "20,00 € ",
           description: "peluche coelho",
+          heart:"icon coração off.png"
         },
         {
           image: "2.jpg",
           price: "13,00 €",
           description: "urso de peluche cizento",
+          heart:"icon coração on.png"
         },
         {
           image: "4.jpg",
           price: "17,00 €",
           description: "boneca de peluche",
+          heart:"icon coração on.png"
         },
       ],
     };
