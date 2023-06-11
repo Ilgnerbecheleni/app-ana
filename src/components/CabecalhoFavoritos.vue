@@ -61,7 +61,7 @@ export default {
   justify-content: space-evenly;
   gap: 15px;
   margin-top: 110px;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 #cinza {
   font-family: Open sans-serif;
