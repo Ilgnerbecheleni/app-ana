@@ -45,7 +45,10 @@ export default {
 </script>
 
 <style scoped>
-.favoritos-view{
+.favoritos-view {
   padding-top: 150px;
+}
+.recomendados {
+  background: #fcfaf8;
 }
 </style>
