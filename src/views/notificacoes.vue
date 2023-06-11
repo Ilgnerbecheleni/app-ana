@@ -1,6 +1,6 @@
 <template>
   <div class="notificacoes">
-    <h1>Tela Notificacoes</h1>
+    <Notificacoes />
     <MenuItem
       :should-display="shouldDisplay"
       :homeDisplay="false"
@@ -14,9 +14,10 @@
 
 <script>
 import MenuItem from "../components/Menu.vue";
+import Notificacoes from "@/components/Notificacoes.vue";
 export default {
   name: "NotificacoesTela",
-  components: { MenuItem },
+  components: { MenuItem, Notificacoes },
   methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
@@ -25,14 +26,13 @@ export default {
   data() {
     return {
       shouldDisplay: true,
-    
     };
   },
 };
 </script>
 
 <style scoped>
-.notificacoes{
+.notificacoes {
   padding-top: 150px;
 }
 </style>
