@@ -1,14 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav class="menu" :style="{ display: shouldDisplay ? 'flex' : 'none' }">
-    <router-link to="/">
+    <router-link class="none" to="/">
       <img
         :src="!homeDisplay ? activeImages['homeOff'] : activeImages['homeOn']"
         alt="Explorar"
       />
       <h6>explorar</h6>
     </router-link>
-    <router-link to="/favoritos">
+    <router-link class="none" to="/favoritos">
       <img
         :src="
           !favoritosDisplay
@@ -19,7 +19,7 @@
       />
       <h6>favoritos</h6>
     </router-link>
-    <router-link to="/vender">
+    <router-link class="none" to="/vender">
       <img
         :src="
           !venderDisplay ? activeImages['venderOff'] : activeImages['venderOn']
@@ -28,7 +28,7 @@
       />
       <h6>vender</h6>
     </router-link>
-    <router-link to="/notificacoes">
+    <router-link class="none" to="/notificacoes">
       <img
         :src="
           !notificacoesDisplay
@@ -39,7 +39,7 @@
       />
       <h6>notificações</h6>
     </router-link>
-    <router-link to="/perfil">
+    <router-link class="none" to="/perfil">
       <img
         :src="
           !perfilDisplay ? activeImages['perfiloff'] : activeImages['perfilon']
@@ -136,6 +136,9 @@ h6 {
   padding: 0;
   font-family: Open sans-serif;
   color: #aca9a5;
+  text-decoration: none;
+}
+.none {
   text-decoration: none;
 }
 </style>
