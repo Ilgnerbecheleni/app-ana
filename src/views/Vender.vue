@@ -1,18 +1,7 @@
 <template>
   <div>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
-    <H2>VENDER</H2>
+    <Vender />
+
     <H2>VENDER</H2>
 
     <MenuItem
@@ -27,9 +16,10 @@
 
 <script>
 import MenuItem from "../components/Menu.vue";
+import Vender from "@/components/Vender.vue";
 export default {
   name: "VenderTela",
-  components: { MenuItem },
+  components: { MenuItem, Vender },
   data() {
     return {
       shouldDisplay: true,
