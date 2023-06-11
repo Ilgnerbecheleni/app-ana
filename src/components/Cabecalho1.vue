@@ -76,7 +76,7 @@ export default {
   width: 100%;
   justify-self: start;
   justify-content: start;
-  gap: 14px;
+  gap: 20px;
 }
 
 .opcoes li {

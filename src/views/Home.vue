@@ -5,40 +5,43 @@
     <section class="telaHome">
       <router-link to="/produto" class="linkcard">
         <CardItem
-            image="produto.jpg"
-            price="48,00 € "
-            description="coelho e rena de peluche"
-            heart="icon coração on.png"
-          />
+          image="produto.jpg"
+          price="48,00 € "
+          description="coelho e rena de peluche"
+          heart="icon coração on.png"
+        />
       </router-link>
       <div v-for="item in cardItems" :key="item.price" class="wrapper">
-         <CardItem
-            :image="item.image"
-            :price="item.price"
-            :description="item.description"
-            :heart="item.heart"
-          />
-       
+        <CardItem
+          :image="item.image"
+          :price="item.price"
+          :description="item.description"
+          :heart="item.heart"
+        />
       </div>
     </section>
     <h2 class="homeh2">Recomendados</h2>
     <section class="recomendados">
       <router-link to="/produto" class="linkcard">
         <CardItem
-            image="produto.jpg"
-            price="48,00 € "
-            description="coelho e rena de peluche"
-            heart="icon coração on.png"
-          />
+          image="produto.jpg"
+          price="48,00 € "
+          description="coelho e rena de peluche"
+          heart="icon coração on.png"
+        />
       </router-link>
-      <div v-for="recomendado in recomendados" :key="recomendado.price" class="wrapper">
-          <CardItem
-            :image="recomendado.image"
-            :price="recomendado.price"
-            :description="recomendado.description"
-            :heart="recomendado.heart"
-          />
-       </div>
+      <div
+        v-for="recomendado in recomendados"
+        :key="recomendado.price"
+        class="wrapper"
+      >
+        <CardItem
+          :image="recomendado.image"
+          :price="recomendado.price"
+          :description="recomendado.description"
+          :heart="recomendado.heart"
+        />
+      </div>
     </section>
 
     <MenuItem
@@ -69,7 +72,7 @@ export default {
     return {
       shouldDisplay: true,
       cardItems: mocks.cardItems,
-      recomendados:mocks.listRecomendados,
+      recomendados: mocks.listRecomendados,
     };
   },
 };
