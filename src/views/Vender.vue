@@ -21,9 +21,9 @@ export default {
   data() {
     return {
       shouldDisplay: true,
-     
-        };
-  } };
+    };
+  },
+};
 </script>
 
 <style scoped>
