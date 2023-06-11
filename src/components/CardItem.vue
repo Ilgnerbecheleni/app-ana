@@ -4,7 +4,7 @@
       <img  :src="require(`@/assets/img/${image}`)" alt="" srcset="" class="item-img"  />
       <div class="card-items">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"
+          :src="require(`@/assets/home/${heart}`)"
           alt="Coração"
           class="heart-icon"
         />
@@ -22,6 +22,7 @@ export default {
     image: String,
     price: String,
     description: String,
+    heart:String
   },
 };
 </script>

@@ -9,6 +9,7 @@
             :image="item.image"
             :price="item.price"
             :description="item.description"
+            :heart="item.heart"
           />
         </router-link>
       </div>
@@ -30,8 +31,8 @@
 </template>
 
 <script>
-import Cabecalho1 from "../components/Cabecalho1.vue";
-import MenuItem from "../components/Menu.vue";
+import Cabecalho1 from "@/components/Cabecalho1.vue";
+import MenuItem from "@/components/Menu.vue";
 import CardItem from "@/components/CardItem.vue";
 export default {
   name: "HomeTela",
