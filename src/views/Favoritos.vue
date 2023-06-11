@@ -1,5 +1,5 @@
 <template>
-  <div class="favoritos">
+  <div class="favoritos-view">
     <CabecalhoFavoritos />
     <section class="recomendados">
       <router-link to="/produto" class="linkcard"><Card /></router-link>
