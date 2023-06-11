@@ -52,6 +52,21 @@ export default {
         },
 
         // Outros objetos com diferentes detalhes
+        {
+          image: "18.jpg",
+          price: "20,00 € ",
+          description: "peluche coelho",
+        },
+        {
+          image: "2.jpg",
+          price: "13,00 €",
+          description: "urso de peluche cizento",
+        },
+        {
+          image: "4.jpg",
+          price: "17,00 €",
+          description: "boneca de peluche",
+        },
       ],
     };
   },
