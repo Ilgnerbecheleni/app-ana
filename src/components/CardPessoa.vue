@@ -1,22 +1,21 @@
 <template>
-    <section class="card-pessoa">
-      <img src="../assets/img/pessoa.png" alt="pessoa" class="img-pessoa">
-      <div class="card-utilizador-content">
-
+  <section class="card-pessoa">
+    <img src="../assets/img/pessoa.png" alt="pessoa" class="img-pessoa" />
+    <div class="card-utilizador-content">
       <div class="utilizador">
         <h4 class="nome-utilizador">Nome Utilizador</h4>
-        <img src="../assets/produto/icon medalha.png" alt="" class="medalha">
+        <img src="../assets/produto/icon medalha.png" alt="" class="medalha" />
       </div>
       <div class="estrelas-content">
-        <img src="../assets/produto/icon estrelas.png" alt="" class="estrelas">
+        <img
+          src="../assets/produto/icon estrelas.png"
+          alt=""
+          class="estrelas"
+        />
         <h6 class="avaliacoes-utilizador">(45)</h6>
       </div>
-     
-      </div>
-
-    </section>
-        
-    
+    </div>
+  </section>
 </template>
 
 <script>
@@ -26,7 +25,7 @@ export default {
     image: String,
     price: String,
     description: String,
-    heart:String
+    heart: String,
   },
 };
 </script>
@@ -38,48 +37,47 @@ export default {
   width: 360px;
   height: 80px;
   border-radius: 14px;
-  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas! */
-  
+  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas!! */
+
   margin: 5px;
   display: flex;
   align-items: center;
 }
 
 .img-pessoa {
-
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 100%;
   margin-left: 15px;
 }
-.estrelas{
+.estrelas {
   margin: 0 10px;
 }
-.utilizador{
+.utilizador {
   margin: 0;
   width: 180px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.medalha{
+.medalha {
   width: 14px;
   height: 14px;
 }
-.nome-utilizador{
-  margin:0 ;
-}
-.avaliacoes-utilizador{
+.nome-utilizador {
   margin: 0;
 }
-.estrelas-content{
+.avaliacoes-utilizador {
+  margin: 0;
+}
+.estrelas-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.card-utilizador-content{
+.card-utilizador-content {
   display: flex;
   align-items: start;
   flex-direction: column;
