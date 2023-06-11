@@ -1,11 +1,12 @@
 <template>
   <main class="product">
-    <div>
+    <div class="image-produto-principal">
       <router-link to="/"
         ><img src="../assets/produto/icon seta.png" alt="" class="imgSeta"
       /></router-link>
 
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
+      <img src="../assets/produto/icon bolas.png" alt="" class="imgbolas" />
     </div>
 
     <section class="product-contents">
@@ -70,7 +71,10 @@ export default {
 }
 .product-contents {
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 48px;
+  position: relative;
+  bottom: 22px;
+  background: #fcfaf8;
 }
 
 .definition-product {
@@ -125,10 +129,20 @@ button {
   width: 380px;
 }
 
+.image-produto-principal{
+  width: 100%;
+  position: relative;
+}
+
 .imgSeta {
   width: 20px;
   margin-top: 40px;
   margin-left: 20px;
+  position: absolute;
+}
+
+.imgbolas{
+ bottom: 54px;
   position: absolute;
 }
 </style>

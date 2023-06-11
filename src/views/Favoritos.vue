@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 .favoritos-view {
-  padding-top: 150px;
+  padding-top: 210px;
   height: 1120px;
 }
 
