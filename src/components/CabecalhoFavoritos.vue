@@ -5,10 +5,10 @@
       <h2 class="favoritos">favoritos!</h2>
     </div>
     <div class="enunciado">
-      <p>brinquedos</p>
-      <p id="cinza">utilizadores</p>
-      <p id="cinza">pesquisas</p>
-      <p id="cinza">pedidos</p>
+      <p class="preto">brinquedos</p>
+      <p class="cinza">utilizadores</p>
+      <p class="cinza">pesquisas</p>
+      <p class="cinza">pedidos</p>
     </div>
   </nav>
 </template>
@@ -63,8 +63,13 @@ export default {
   margin-top: 110px;
   margin-left: 25px;
 }
-#cinza {
+.cinza {
   font-family: Open sans-serif;
   color: #aca9a5;
+}
+.preto {
+  font-family: Open sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
 }
 </style>
