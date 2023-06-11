@@ -4,15 +4,19 @@
       <h1 class="title1">Bem vindo,</h1>
       <h2>user_name</h2>
       <div class="search">
-        <img src="../assets/home/icon pesquisar.png" alt="" class="searchimg" />
+        <img
+          src="../assets/home/icon pesquisar.png"
+          alt=""
+          class="searchimg"
+          placeholder="pesquisar brinquedos ou utilizadores"
+        />
         <input type="text" />
       </div>
       <ul class="opcoes">
-        <li>para ti</li>
-        <li>pedidos em aberto</li>
+        <li class="opcoes1">para ti</li>
+        <li class="opcoes2">pedidos em aberto</li>
       </ul>
-     </nav>
- 
+    </nav>
   </header>
 </template>
 
@@ -67,18 +71,16 @@ export default {
   justify-content: center;
 }
 
-.opcoes{
+.opcoes {
   display: flex;
   width: 100%;
   justify-self: start;
   justify-content: start;
-  gap:14px;
-
+  gap: 14px;
 }
 
-.opcoes li{
+.opcoes li {
   list-style: none;
-
 }
 
 h2 {
@@ -87,7 +89,7 @@ h2 {
 
 .title1 {
   text-align: start;
- margin-top: 40px; 
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -102,5 +104,14 @@ h2 {
   line-height: 23px;
   font-weight: bold;
   font-family: Open sans-serif;
+}
+.opcoes1 {
+  font-weight: bold;
+  font-family: Open sans-serif;
+}
+.opcoes2 {
+  font-weight: bold;
+  font-family: Open sans-serif;
+  color: #aca9a5;
 }
 </style>

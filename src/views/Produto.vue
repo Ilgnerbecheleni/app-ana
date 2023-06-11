@@ -2,6 +2,7 @@
   <div>
     <header>
       <router-link to="/">voltar</router-link>
+
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
     </header>
 
@@ -55,7 +56,7 @@ export default {
   data() {
     return {
       shouldDisplay: false,
-       };
+    };
   },
 };
 </script>
