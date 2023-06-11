@@ -1,22 +1,24 @@
 <template>
   <div>
     <header>
-      <router-link to="/">voltar</router-link>
+      <router-link to="/"
+        ><img src="../assets/produto/icon seta.png" alt="" class="imgSeta"
+      /></router-link>
 
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
     </header>
 
     <main class="produto">
-      <h2>Pelúcias Coelho e Rena</h2>
+      <h2>Peluches Coelho e Rena</h2>
 
       <h4>
-        Vendo dois pelúcias, um coelho castanho e uma rena castanho claro, que
+        Vendo dois peluches, um coelho castanho e uma rena castanho claro, que
         se encontram em um ótimo estado.
       </h4>
 
       <div class="descricao">
         <p id="cinza">categoria:</p>
-        <p id="preto">pelúcias</p>
+        <p id="preto">peluches</p>
         <p id="cinza">marca:</p>
         <p id="preto">chicco</p>
         <p id="cinza">idade:</p>
@@ -104,5 +106,12 @@ button {
 
 .imgProduto {
   width: 360px;
+}
+
+.imgSeta {
+  width: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  position: absolute;
 }
 </style>
