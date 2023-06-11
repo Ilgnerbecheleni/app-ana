@@ -1,11 +1,15 @@
 <template>
   <div class="favoritos-view">
     <CabecalhoFavoritos />
-    <section class="recomendados">
-      <router-link to="/produto" class="linkcard"><Card /></router-link>
-      <Cardfavoritos />
-      <Cardfavoritos />
-      <Cardfavoritos />
+    <section v-for="item in  cardsFavoritos" :key="item.price" class="recomendados">
+      <router-link to="/produto" class="linkcard">
+        <CardItem
+            :image="item.image"
+            :price="item.price"
+            :description="item.description"
+          />
+      </router-link>
+
     </section>
 
     <MenuItem
@@ -22,10 +26,10 @@
 <script>
 import MenuItem from "../components/Menu.vue";
 import CabecalhoFavoritos from "../components/CabecalhoFavoritos.vue";
-import Cardfavoritos from "../components/CardFavoritos.vue";
+import CardItem from "@/components/CardItem.vue";
 export default {
   name: "FavoritosTela",
-  components: { MenuItem, CabecalhoFavoritos, Cardfavoritos },
+  components: { MenuItem, CabecalhoFavoritos, CardItem },
   methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
@@ -39,7 +43,13 @@ export default {
       loginDisplay: true,
       venderDisplay: true,
       perfilDisplay: true,
-    };
+      cardsFavoritos: [
+        {
+          image: "1.jpg",
+          price: "43,00",
+          description: "Urso Peluche",
+        },
+    ]};
   },
 };
 </script>
@@ -49,6 +59,12 @@ export default {
 .favoritos-view{
   
   padding-top: 150px;
+}
+
+.linkcard {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 .recomendados {
   background: #fcfaf8;

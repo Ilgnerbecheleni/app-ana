@@ -1,15 +1,15 @@
 <template>
   <section class="card">
     <div class="card">
-      <img src="../assets/img/18.jpg" alt="" srcset="" class="card-img" />
+      <img  :src="require(`@/assets/img/${image}`)" alt="" srcset="" class="item-img"  />
       <div class="card-items">
         <img
           src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"
           alt="Coração"
           class="heart-icon"
         />
-        <h4 class="price">43,00</h4>
-        <p class="desc">Urso Peluche</p>
+        <h4 class="price">{{ price }}</h4>
+        <p class="desc">{{ description }}</p>
       </div>
     </div>
   </section>
@@ -18,6 +18,11 @@
 <script>
 export default {
   name: "CardItem",
+  props: {
+    image: String,
+    price: String,
+    description: String,
+  },
 };
 </script>
 
@@ -28,20 +33,15 @@ export default {
   width: 155px;
   height: 245px;
   border-radius: 14px;
-  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas!! */
+  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
   box-shadow: -3px 10px 22px 6px rgba(0, 0, 0, 0.1);
   margin: 5px;
 }
 
-.card-img {
+.item-img {
   width: 155px;
   height: 151px;
-  object-fit: cover;
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 50%,
-    white 100%
-  ); /* Máscara de corte */
+  
 }
 .price {
   margin: 15px 0 0 15px;

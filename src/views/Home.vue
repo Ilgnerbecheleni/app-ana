@@ -3,25 +3,19 @@
     <Cabecalho1 />
     <h2 class="homeh2">vistos recentemente</h2>
     <section class="telaHome">
-      <div v-for="item in cardItems" :key="item.src" class="wrapper">
+      <div v-for="item in cardItems" :key="item.price" class="wrapper">
         <router-link to="/produto" class="linkcard">
-          <Card
-        :src="item.src"
-        :price="item.price"
-        :description="item.description"
-      />
-                </router-link>
-       
+          <CardItem
+            :image="item.image"
+            :price="item.price"
+            :description="item.description"
+          />
+        </router-link>
       </div>
     </section>
     <h2 class="homeh2">Recomendados</h2>
     <section class="recomendados">
-      <router-link to="/produto" class="linkcard"><Card /></router-link>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <router-link to="/produto" class="linkcard"></router-link>
     </section>
 
     <MenuItem
@@ -38,10 +32,10 @@
 <script>
 import Cabecalho1 from "../components/Cabecalho1.vue";
 import MenuItem from "../components/Menu.vue";
-import Card from "@/components/Card.vue";
+import CardItem from "@/components/CardItem.vue";
 export default {
   name: "HomeTela",
-  components: { MenuItem, Cabecalho1, Card },
+  components: { MenuItem, Cabecalho1, CardItem },
   methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
@@ -52,10 +46,11 @@ export default {
       shouldDisplay: true,
       cardItems: [
         {
-          src: "1.jpg",
+          image: "1.jpg",
           price: "43,00",
           description: "Urso Peluche",
         },
+
         // Outros objetos com diferentes detalhes
       ],
     };
