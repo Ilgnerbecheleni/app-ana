@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home" >
     <Cabecalho1 />
     <h2 class="homeh2">vistos recentemente</h2>
     <section class="telaHome">
@@ -52,7 +52,11 @@ export default {
 </script>
 
 <style scoped>
-.telaHome {
+
+.home{
+  padding-top: 150px;
+}
+.telaHome{
   margin: 0;
   padding-left: 15px;
   display: flex;

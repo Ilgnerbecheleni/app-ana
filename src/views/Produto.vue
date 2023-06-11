@@ -1,12 +1,14 @@
 <template>
   <div>
-    <header>
-      <router-link to="/"
+  <div>
+    <router-link to="/"
         ><img src="../assets/produto/icon seta.png" alt="" class="imgSeta"
       /></router-link>
 
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
-    </header>
+  
+  </div>
+  
 
     <main class="produto">
       <h2>Peluches Coelho e Rena</h2>
@@ -105,6 +107,7 @@ button {
 }
 
 .imgProduto {
+  margin-top: 0;
   width: 360px;
 }
 

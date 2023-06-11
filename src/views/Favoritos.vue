@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="favoritos">
     <CabecalhoFavoritos />
     <section class="recomendados">
       <router-link to="/produto" class="linkcard"><Card /></router-link>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped>
-.recomendados {
-  background: #fcfaf8;
+.favoritos{
+  padding-top: 150px;
 }
 </style>
