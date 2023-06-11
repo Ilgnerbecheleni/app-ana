@@ -17,6 +17,16 @@
     <h2 class="homeh2">Recomendados</h2>
     <section class="recomendados">
       <router-link to="/produto" class="linkcard"></router-link>
+      <div v-for="recomendado in recomendados" :key="recomendado.price" class="wrapper">
+        <router-link to="/produto" class="linkcard">
+          <CardItem
+            :image="recomendado.image"
+            :price="recomendado.price"
+            :description="recomendado.description"
+            :heart="recomendado.heart"
+          />
+        </router-link>
+      </div>
     </section>
 
     <MenuItem
@@ -31,6 +41,7 @@
 </template>
 
 <script>
+import listRecomendados from "@/mocks/mock";
 import Cabecalho1 from "@/components/Cabecalho1.vue";
 import MenuItem from "@/components/Menu.vue";
 import CardItem from "@/components/CardItem.vue";
@@ -47,13 +58,11 @@ export default {
       shouldDisplay: true,
       cardItems: [
         {
-          image: "produtoa.jpg",
+          image: "produto.jpg",
           price: "48,00 € ",
           description: "coelho e rena de peluche",
-          heart: "icon coração on.png",
-        },
-
-        // Outros objetos com diferentes detalhes
+          heart: "icon coração off.png",
+        }, // Outros objetos com diferentes detalhes
         {
           image: "18.jpg",
           price: "20,00 € ",
@@ -73,6 +82,7 @@ export default {
           heart: "icon coração off.png",
         },
       ],
+      recomendados:listRecomendados,
     };
   },
 };
