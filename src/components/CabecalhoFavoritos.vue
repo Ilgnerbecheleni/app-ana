@@ -46,6 +46,7 @@ export default {
   font-family: Open sans-serif;
   line-height: 22px;
   font-weight: bold;
+  margin: 0%;
 }
 .favoritos {
   color: #f06943;
