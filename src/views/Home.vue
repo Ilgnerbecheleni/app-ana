@@ -3,30 +3,42 @@
     <Cabecalho1 />
     <h2 class="homeh2">vistos recentemente</h2>
     <section class="telaHome">
+      <router-link to="/produto" class="linkcard">
+        <CardItem
+            image="produto.jpg"
+            price="48,00 € "
+            description="coelho e rena de peluche"
+            heart="icon coração on.png"
+          />
+      </router-link>
       <div v-for="item in cardItems" :key="item.price" class="wrapper">
-        <router-link to="/produto" class="linkcard">
-          <CardItem
+         <CardItem
             :image="item.image"
             :price="item.price"
             :description="item.description"
             :heart="item.heart"
           />
-        </router-link>
+       
       </div>
     </section>
     <h2 class="homeh2">Recomendados</h2>
     <section class="recomendados">
-      <router-link to="/produto" class="linkcard"></router-link>
+      <router-link to="/produto" class="linkcard">
+        <CardItem
+            image="produto.jpg"
+            price="48,00 € "
+            description="coelho e rena de peluche"
+            heart="icon coração on.png"
+          />
+      </router-link>
       <div v-for="recomendado in recomendados" :key="recomendado.price" class="wrapper">
-        <router-link to="/produto" class="linkcard">
           <CardItem
             :image="recomendado.image"
             :price="recomendado.price"
             :description="recomendado.description"
             :heart="recomendado.heart"
           />
-        </router-link>
-      </div>
+       </div>
     </section>
 
     <MenuItem
@@ -57,12 +69,6 @@ export default {
     return {
       shouldDisplay: true,
       cardItems: [
-        {
-          image: "produto.jpg",
-          price: "48,00 € ",
-          description: "coelho e rena de peluche",
-          heart: "icon coração off.png",
-        }, // Outros objetos com diferentes detalhes
         {
           image: "18.jpg",
           price: "20,00 € ",
