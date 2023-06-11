@@ -62,13 +62,15 @@ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+
 }
 .desc {
-  margin: 9px 0 0 15px;
+margin:0;
   font-size: 0.8em;
   word-wrap: break-word;
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 
 .heart-icon {
