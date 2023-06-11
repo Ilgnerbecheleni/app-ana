@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Cabecalho1 />
     <H2>VENDER</H2>
     <H2>VENDER</H2>
     <H2>VENDER</H2>
@@ -28,10 +27,9 @@
 
 <script>
 import MenuItem from "../components/Menu.vue";
-import Cabecalho1 from "../components/Cabecalho1.vue";
 export default {
   name: "VenderTela",
-  components: { MenuItem, Cabecalho1 },
+  components: { MenuItem },
   data() {
     return {
       shouldDisplay: true,

@@ -2,30 +2,30 @@
   <div class="favoritos-view">
     <CabecalhoFavoritos />
     <main class="content">
-    <section
-      v-for="item in cardsFavoritos"
-      :key="item.price"
-      class="recomendados"
-    >
-      <router-link to="/produto" class="linkcard">
-        <CardItem
-          :image="item.image"
-          :price="item.price"
-          :description="item.description"
-          :heart="item.heart"
-        />
-      </router-link>
-    </section>
+      <section
+        v-for="item in cardsFavoritos"
+        :key="item.price"
+        class="recomendados"
+      >
+        <router-link to="/produto" class="linkcard">
+          <CardItem
+            :image="item.image"
+            :price="item.price"
+            :description="item.description"
+            :heart="item.heart"
+          />
+        </router-link>
+      </section>
 
-    <MenuItem
-      :should-display="shouldDisplay"
-      :homeDisplay="false"
-      :favoritosDisplay="true"
-      :loginDisplay="false"
-      :venderDisplay="false"
-      :notificacoesDisplay="false"
-    />
-  </main>
+      <MenuItem
+        :should-display="shouldDisplay"
+        :homeDisplay="false"
+        :favoritosDisplay="true"
+        :loginDisplay="false"
+        :venderDisplay="false"
+        :notificacoesDisplay="false"
+      />
+    </main>
   </div>
 </template>
 
@@ -90,12 +90,9 @@ export default {
   text-decoration: none;
   color: black;
 }
-.recomendados {
 
- 
-}
-.content{
+.content {
   display: grid;
- grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 </style>
