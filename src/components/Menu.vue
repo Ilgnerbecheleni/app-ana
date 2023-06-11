@@ -6,6 +6,7 @@
         :src="!homeDisplay ? activeImages['homeOff'] : activeImages['homeOn']"
         alt="Explorar"
       />
+      
     </router-link>
     <router-link to="/favoritos">
       <img
