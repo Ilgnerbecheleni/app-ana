@@ -9,14 +9,7 @@
       <p id="cinza">notificações</p>
     </div>
     <div class="cardNotificacoes">
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
-      <h1>CARD</h1>
+      
     </div>
   </nav>
 </template>
