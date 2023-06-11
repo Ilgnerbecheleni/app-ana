@@ -7,7 +7,11 @@
         <h4 class="nome-utilizador">Nome Utilizador</h4>
         <img src="../assets/produto/icon medalha.png" alt="" class="medalha">
       </div>
-      <img src="../assets/produto/icon estrelas.png" alt="" class="estrelas">
+      <div class="estrelas-content">
+        <img src="../assets/produto/icon estrelas.png" alt="" class="estrelas">
+        <h6 class="avaliacoes-utilizador">(45)</h6>
+      </div>
+     
       </div>
 
     </section>
@@ -60,7 +64,14 @@ export default {
 .nome-utilizador{
   margin:0 ;
 }
-
+.avaliacoes-utilizador{
+  margin: 0;
+}
+.estrelas-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .card-utilizador-content{
   display: flex;
