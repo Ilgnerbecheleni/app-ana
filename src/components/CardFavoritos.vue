@@ -9,7 +9,7 @@
           class="heart-icon"
         />
         <h4 class="price">43,00</h4>
-        <p class="desc">Urso Pelucia</p>
+        <p class="desc">Urso Peluche</p>
       </div>
     </div>
   </section>
