@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .notificacoes {
-  padding-top: 150px;
-  height: 1120px;
+  padding-top: 210px;
+  
 }
 </style>
