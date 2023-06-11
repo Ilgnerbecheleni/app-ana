@@ -9,7 +9,6 @@
       <p id="cinza">utilizadores</p>
       <p id="cinza">pesquisas</p>
       <p id="cinza">pedidos</p>
-      ''
     </div>
   </nav>
 </template>
@@ -59,7 +58,7 @@ export default {
   font-family: Open sans-serif;
   display: flex;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 12px;
   margin-top: 110px;
   margin-left: 25px;
 }
