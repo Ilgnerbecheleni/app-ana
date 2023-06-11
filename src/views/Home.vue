@@ -81,11 +81,11 @@ export default {
 <style scoped>
 .home {
   padding-top: 210px;
-  height: 110vh;
+  height: 122vh;
 }
 .telaHome {
   margin: 0;
-  
+
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -106,7 +106,7 @@ export default {
   grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
   align-items: center;
-  
+
   gap: 15px;
 }
 .linkcard {
