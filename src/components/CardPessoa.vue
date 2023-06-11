@@ -44,7 +44,7 @@ export default {
   margin-left: 15px;
 }
 .estrelas{
-  margin: 0;
+  margin: 0 10px;
 }
 .utilizador{
   margin: 0;
@@ -57,12 +57,15 @@ export default {
   width: 14px;
   height: 14px;
 }
+.nome-utilizador{
+  margin:0 ;
+}
 
 
 .card-utilizador-content{
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 </style>
