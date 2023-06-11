@@ -1,5 +1,5 @@
 <template>
-  <div class="home" >
+  <div class="home">
     <Cabecalho1 />
     <h2 class="homeh2">vistos recentemente</h2>
     <section class="telaHome">
@@ -52,11 +52,10 @@ export default {
 </script>
 
 <style scoped>
-
-.home{
+.home {
   padding-top: 150px;
 }
-.telaHome{
+.telaHome {
   margin: 0;
   padding-left: 15px;
   display: flex;
@@ -66,7 +65,7 @@ export default {
 }
 .wrapper {
   display: inline-flex;
-  gap: 10px; /* Espaçamento entre os cards */
+  gap: 10px;
 }
 
 .homeh2 {
