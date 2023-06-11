@@ -1,7 +1,12 @@
 <template>
   <section class="card">
     <div class="card">
-      <img  :src="require(`@/assets/img/${image}`)" alt="" srcset="" class="item-img"  />
+      <img
+        :src="require(`@/assets/img/${image}`)"
+        alt=""
+        srcset=""
+        class="item-img"
+      />
       <div class="card-items">
         <img
           :src="require(`@/assets/home/${heart}`)"
@@ -22,7 +27,7 @@ export default {
     image: String,
     price: String,
     description: String,
-    heart:String
+    heart: String,
   },
 };
 </script>
@@ -34,7 +39,7 @@ export default {
   width: 155px;
   height: 245px;
   border-radius: 14px;
-  overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas */
+  overflow: hidden; /*Adicionado para esconder o conteúdo que excede as bordas */
   box-shadow: -3px 10px 22px 6px rgba(0, 0, 0, 0.1);
   margin: 5px;
 }
@@ -42,7 +47,6 @@ export default {
 .item-img {
   width: 155px;
   height: 151px;
-  
 }
 .price {
   margin: 15px 0 0 15px;
