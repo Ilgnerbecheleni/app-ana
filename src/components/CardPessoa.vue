@@ -1,6 +1,6 @@
 <template>
     <section class="card-pessoa">
-      <img src="../assets/img/pessoa.png" alt="pessoa">
+      <img src="../assets/img/pessoa.png" alt="pessoa" class="img-pessoa">
       
 
     </section>
@@ -27,11 +27,11 @@ text-decoration: none;
   margin:5px;
 }
 
-.card-pessoa-img {
+.img-pessoa {
 
   width: 155px;
   height: 151px;
-   object-fit: cover;
+  object-fit: cover;
   mask-image: linear-gradient(to bottom, transparent 50%, white 100%); /* Máscara de corte */
   border-radius: 100%;
 }
