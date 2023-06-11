@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped>
-.favoritos{
+.favoritos-view{
   padding-top: 150px;
 }
 </style>
