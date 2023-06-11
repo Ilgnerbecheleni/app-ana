@@ -6,7 +6,7 @@
         :src="!homeDisplay ? activeImages['homeOff'] : activeImages['homeOn']"
         alt="Explorar"
       />
-      <h6>explorar</h6>
+      <h6 class="nav">explorar</h6>
     </router-link>
     <router-link class="none" to="/favoritos">
       <img
@@ -17,7 +17,7 @@
         "
         alt="Favoritos"
       />
-      <h6>favoritos</h6>
+      <h6 class="nav">favoritos</h6>
     </router-link>
     <router-link class="none" to="/vender">
       <img
@@ -26,7 +26,7 @@
         "
         alt="Vender"
       />
-      <h6>vender</h6>
+      <h6 class="nav">vender</h6>
     </router-link>
     <router-link class="none" to="/notificacoes">
       <img
@@ -37,7 +37,7 @@
         "
         alt="Notificações"
       />
-      <h6>notificações</h6>
+      <h6 class="nav">notificações</h6>
     </router-link>
     <router-link class="none" to="/perfil">
       <img
@@ -46,7 +46,7 @@
         "
         alt="Notificações"
       />
-      <h6>perfil</h6>
+      <h6 class="nav">perfil</h6>
     </router-link>
   </nav>
 </template>
@@ -131,7 +131,7 @@ export default {
   align-items: center;
   justify-content: space-evenly;
 }
-h6 {
+.nav {
   margin: 0;
   padding: 0;
   font-family: Open sans-serif;
