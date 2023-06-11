@@ -2,36 +2,32 @@
   <div class="home" >
     <Cabecalho1 />
     <h2 class="homeh2">vistos recentemente</h2>
-<section class="telaHome">
-<div class="wrapper">
-  <router-link to="/produto" class="linkcard"><Card /></router-link>
-    <Card />
-    <Card />
-    <Card />
-</div>
+    <section class="telaHome">
+      <div class="wrapper">
+        <router-link to="/produto" class="linkcard"><Card /></router-link>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </section>
+    <h2 class="homeh2">Recomendados</h2>
+    <section class="recomendados">
+      <router-link to="/produto" class="linkcard"><Card /></router-link>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </section>
 
-  </section>
-  <h2 class="homeh2">Recomendados</h2>
-  <section class="recomendados">
-    <router-link to="/produto" class="linkcard"><Card /></router-link>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-</section>
-
- 
-<MenuItem 
-:should-display="shouldDisplay"  
-:homeDisplay="true"
-:favoritosDisplay="false"
-:perfilDisplay="false"
-:venderDisplay="false"
-:notificacoesDisplay="false"
-
-
-/>
+    <MenuItem
+      :should-display="shouldDisplay"
+      :homeDisplay="true"
+      :favoritosDisplay="false"
+      :perfilDisplay="false"
+      :venderDisplay="false"
+      :notificacoesDisplay="false"
+    />
   </div>
 </template>
 
@@ -39,8 +35,10 @@
 import Cabecalho1 from "../components/Cabecalho1.vue";
 import MenuItem from "../components/Menu.vue";
 import Card from "@/components/Card.vue";
-export default { name: "HomeTela", components: { MenuItem, Cabecalho1, Card },
-methods: {
+export default {
+  name: "HomeTela",
+  components: { MenuItem, Cabecalho1, Card },
+  methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
     },
@@ -48,9 +46,9 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-      
     };
-  },};
+  },
+};
 </script>
 
 <style scoped>
@@ -66,28 +64,27 @@ methods: {
   overflow-x: scroll;
   white-space: nowrap;
 }
-.wrapper{
+.wrapper {
   display: inline-flex;
   gap: 10px; /* Espaçamento entre os cards */
 }
 
-.homeh2
-{
+.homeh2 {
   margin-left: 15px;
   text-align: start;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.recomendados{
+.recomendados {
   display: grid;
- grid-template-columns: 1fr 1fr;
- justify-content: space-evenly;
- align-items: center;
- margin-left:20px;
- gap:15px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 20px;
+  gap: 15px;
 }
-.linkcard{
-  font-family: 'Open Sans', sans-serif;
-text-decoration: none;
-color: black;
+.linkcard {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 </style>

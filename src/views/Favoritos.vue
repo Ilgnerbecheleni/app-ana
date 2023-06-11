@@ -23,8 +23,10 @@
 import MenuItem from "../components/Menu.vue";
 import CabecalhoFavoritos from "../components/CabecalhoFavoritos.vue";
 import Cardfavoritos from "../components/CardFavoritos.vue";
-export default { name: "FavoritosTela", components: { MenuItem ,CabecalhoFavoritos,Cardfavoritos} ,
-methods: {
+export default {
+  name: "FavoritosTela",
+  components: { MenuItem, CabecalhoFavoritos, Cardfavoritos },
+  methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
     },
@@ -32,14 +34,14 @@ methods: {
   data() {
     return {
       shouldDisplay: true,
-      homeDisplay:true,
-      favoritosDisplay:true,
-      loginDisplay:true,
-      venderDisplay:true,
-      perfilDisplay:true
+      homeDisplay: true,
+      favoritosDisplay: true,
+      loginDisplay: true,
+      venderDisplay: true,
+      perfilDisplay: true,
     };
-  
-  }, };
+  },
+};
 </script>
 
 <style scoped>
