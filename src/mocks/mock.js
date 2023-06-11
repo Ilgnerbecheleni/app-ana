@@ -2,19 +2,19 @@ const mocks = {
   listRecomendados: [
 
     {
-      image: "18.jpg",
+      image: "5.jpg",
       price: "20,00 € ",
       description: "peluche coelho",
       heart: "icon coração off.png",
     },
     {
-      image: "2.jpg",
+      image: "6.jpg",
       price: "13,00 €",
       description: "urso de peluche cizento",
       heart: "icon coração off.png",
     },
     {
-      image: "4.jpg",
+      image: "1.jpg",
       price: "17,00 €",
       description: "boneca de peluche",
       heart: "icon coração off.png",
