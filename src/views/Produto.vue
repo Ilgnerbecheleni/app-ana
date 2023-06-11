@@ -1,46 +1,38 @@
 <template>
-  <div>
-  <div>
-    <router-link to="/"
+  <main class="product">
+    <div>
+      <router-link to="/"
         ><img src="../assets/produto/icon seta.png" alt="" class="imgSeta"
       /></router-link>
 
       <img src="../assets/img/produto.jpg" alt="" class="imgProduto" />
-  
-  </div>
-  
+    </div>
 
-    <main class="produto">
+    <section class="product-contents">
       <h2>Peluches Coelho e Rena</h2>
 
-      <h4>
-        Vendo dois peluches, um coelho castanho e uma rena castanho claro, que
-        se encontram em um ótimo estado.
-      </h4>
-
-      <div class="descricao">
-        <p id="cinza">categoria:</p>
-        <p id="preto">peluches</p>
-        <p id="cinza">marca:</p>
-        <p id="preto">chicco</p>
-        <p id="cinza">idade:</p>
-        <p id="preto">1 ano</p>
-        <p id="cinza">estado:</p>
-        <p id="preto">muito bom</p>
-        <p id="cinza">localização:</p>
-        <p id="preto">beja</p>
-        <p id="cinza">raridade:</p>
-        <p id="preto">comum</p>
-        <p id="cinza">ano:</p>
-        <p id="preto">1998</p>
-        <p id="cinza">preço:</p>
-        <p id="preto">28€</p>
+      <p class="definition-product">
+        Vendo dois peluches, um coelho castanho e uma rena castanho claro, que se
+        encontram em um ótimo estado.
+      </p>
+      <div class="definition-caract">
+        <ul class="caract">
+          <li>categoria:<strong> peluches</strong></li>
+          <li>marca:<strong> chicco</strong></li>
+          <li>idade:<strong> 1 ano</strong></li>
+          <li>estado:<strong> muito bom</strong></li>
+        </ul>
+        <ul class="caract">
+          <li>localização:<strong> peluches</strong></li>
+          <li>raridade:<strong> comum</strong></li>
+          <li>ano:<strong> 1998</strong></li>
+          <li>preço:<strong> 28€</strong></li>
+        </ul>
       </div>
+      <CardPessoa />
+    </section>
+    <button>CONVERSAR</button>
 
-      <div>Vendedor</div>
-
-      <button>CONVERSAR</button>
-    </main>
     <MenuItem
       :should-display="shouldDisplay"
       :homeDisplay="true"
@@ -48,15 +40,15 @@
       :perfilDisplay="false"
       :venderDisplay="false"
     />
-  </div>
+  </main>
 </template>
 
 <script>
 import MenuItem from "../components/Menu.vue";
-import ProdutoTela from "../components/Produto.vue";
+import CardPessoa from "../components/CardPessoa.vue";
 export default {
   name: "ProdutoTela",
-  comments: { ProdutoTela, MenuItem },
+  components: { MenuItem, CardPessoa },
   data() {
     return {
       shouldDisplay: false,
@@ -66,18 +58,38 @@ export default {
 </script>
 
 <style scoped>
-.produto > h2 {
-  font-family: Open sans-serif;
-  line-height: 22px;
-  font-weight: bold;
+.product{
+  width:360px ;
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.product-contents {
+  padding: 8px;
+  border-radius: 8px;
 }
 
-.produto > h4 {
-  font-family: Open sans-serif;
-  line-height: 22px;
-  color: #aca9a5;
+.definition-product {
+  padding: 12px;
+  text-align: justify;
 }
 
+.definition-caract {
+  display: flex;
+  justify-content: space-around;
+}
+.caract {
+  text-align: start;
+}
+
+.caract li {
+  list-style-type: none;
+  font-size: 0.9em;
+}
 .descricao {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -87,12 +99,14 @@ export default {
   font-family: Open sans-serif;
   color: #aca9a5;
   line-height: 22px;
+  margin: 0;
 }
 #preto {
   font-family: Open sans-serif;
   color: #2f2e2c;
   line-height: 22px;
   font-weight: bold;
+  margin: 0;
 }
 button {
   font-family: Open sans-serif;
@@ -108,7 +122,7 @@ button {
 
 .imgProduto {
   margin-top: 0;
-  width: 360px;
+  width: 380px;
 }
 
 .imgSeta {

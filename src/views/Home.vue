@@ -78,6 +78,7 @@ export default {
 <style scoped>
 .home {
   padding-top: 150px;
+  height: 1120px;
 }
 .telaHome {
   margin: 0;

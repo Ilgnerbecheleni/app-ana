@@ -22,6 +22,12 @@
 <script>
 export default {
   name: "CardItem",
+  props: {
+    image: String,
+    price: String,
+    description: String,
+    heart:String
+  },
 };
 </script>
 
@@ -33,7 +39,7 @@ export default {
   height: 80px;
   border-radius: 14px;
   overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas! */
-  box-shadow: -3px 10px 22px 6px rgba(0, 0, 0, 0.1);
+  
   margin: 5px;
   display: flex;
   align-items: center;

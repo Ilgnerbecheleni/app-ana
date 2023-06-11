@@ -1,6 +1,7 @@
 <template>
   <div class="notificacoes">
     <Notificacoes />
+    <CardPessoa/>
     <MenuItem
       :should-display="shouldDisplay"
       :homeDisplay="false"
@@ -13,11 +14,12 @@
 </template>
 
 <script>
+import CardPessoa from "@/components/CardPessoa.vue";
 import MenuItem from "../components/Menu.vue";
 import Notificacoes from "@/components/Notificacoes.vue";
 export default {
   name: "NotificacoesTela",
-  components: { MenuItem, Notificacoes },
+  components: { MenuItem, Notificacoes, CardPessoa },
   methods: {
     updateActiveImage(imageSrc) {
       this.activeImage = imageSrc;
@@ -34,5 +36,6 @@ export default {
 <style scoped>
 .notificacoes {
   padding-top: 150px;
+  height: 1120px;
 }
 </style>
