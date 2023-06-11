@@ -50,4 +50,7 @@ export default {
   
   padding-top: 150px;
 }
+.recomendados {
+  background: #fcfaf8;
+}
 </style>
