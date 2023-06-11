@@ -34,6 +34,7 @@ export default {
   padding-left: 0;
   flex-direction: column;
   background-image: url(../assets/favoritos/fundo_favoritos.png);
+  background-size: cover;
 }
 
 .text {

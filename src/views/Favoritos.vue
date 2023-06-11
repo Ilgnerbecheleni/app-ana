@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="favoritos">
     <CabecalhoFavoritos />
     <section class="recomendados">
       <router-link to="/produto" class="linkcard"><Card /></router-link>
@@ -43,5 +43,7 @@ methods: {
 </script>
 
 <style scoped>
-
+.favoritos{
+  padding-top: 150px;
+}
 </style>
