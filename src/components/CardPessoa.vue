@@ -18,7 +18,7 @@ export default {
 .card-pessoa {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  width: 155px;
+  width: 360px;
   height: 245px;
   border-radius: 14px;
   overflow: hidden; /* Adicionado para esconder o conteúdo que excede as bordas! */
