@@ -6,12 +6,11 @@
       <div v-for="item in cardItems" :key="item.src" class="wrapper">
         <router-link to="/produto" class="linkcard">
           <Card
-        :src="item.src"
-        :price="item.price"
-        :description="item.description"
-      />
-                </router-link>
-       
+            :src="item.src"
+            :price="item.price"
+            :description="item.description"
+          />
+        </router-link>
       </div>
     </section>
     <h2 class="homeh2">Recomendados</h2>
@@ -52,11 +51,26 @@ export default {
       shouldDisplay: true,
       cardItems: [
         {
-          src: "1.jpg",
-          price: "43,00",
-          description: "Urso Peluche",
+          src: "produto.jpg",
+          price: "48,00 €",
+          description: "coelho e rena de peluche",
         },
         // Outros objetos com diferentes detalhes
+        {
+          src: "18.jpg",
+          price: "20,00 € ",
+          description: "peluche coelho",
+        },
+        {
+          src: "2.jpg",
+          price: "13,00 €",
+          description: "urso de peluche cizento",
+        },
+        {
+          src: "4.jpg",
+          price: "17,00 €",
+          description: "boneca de peluche",
+        },
       ],
     };
   },
