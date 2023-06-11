@@ -47,7 +47,7 @@ export default {
       shouldDisplay: true,
       cardItems: [
         {
-          image: "1.jpg",
+          image: "produtoa.jpg",
           price: "48,00 € ",
           description: "coelho e rena de peluche",
           heart: "icon coração on.png",
