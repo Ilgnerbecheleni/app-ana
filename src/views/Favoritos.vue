@@ -1,6 +1,7 @@
 <template>
   <div class="favoritos-view">
     <CabecalhoFavoritos />
+    <main class="content">
     <section
       v-for="item in cardsFavoritos"
       :key="item.price"
@@ -24,6 +25,7 @@
       :venderDisplay="false"
       :notificacoesDisplay="false"
     />
+  </main>
   </div>
 </template>
 
@@ -89,6 +91,11 @@ export default {
   color: black;
 }
 .recomendados {
-  background: #fcfaf8;
+
+ 
+}
+.content{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
 }
 </style>
