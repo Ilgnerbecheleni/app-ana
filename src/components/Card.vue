@@ -1,15 +1,15 @@
 <template>
   <section class="card">
     <div class="card">
-      <img src="../assets/img/18.jpg" alt="" srcset="" class="card-img" />
+      <img :src="require(`../assets/img/${src}`)" alt="" srcset="" class="card-img" />
       <div class="card-items">
         <img
           src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"
           alt="Coração"
           class="heart-icon"
         />
-        <h4 class="price">43,00</h4>
-        <p class="desc">Urso Peluche</p>
+        <h4 class="price">{{ price }}</h4>
+        <p class="desc">{{ description }}</p>
       </div>
     </div>
   </section>
@@ -18,6 +18,11 @@
 <script>
 export default {
   name: "CardItem",
+  props: {
+    src: String,
+    price: String,
+    description: String,
+  },
 };
 </script>
 
@@ -42,6 +47,9 @@ export default {
     transparent 50%,
     white 100%
   ); /* Máscara de corte */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 .price {
   margin: 15px 0 0 15px;
