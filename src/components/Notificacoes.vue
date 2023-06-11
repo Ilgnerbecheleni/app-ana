@@ -1,26 +1,34 @@
 <template>
-  <nav class="notificacoesFavoritos">
+  <nav class="notificacoesTela">
     <div class="text">
-      <h2 class="boasvindas">os meus</h2>
-      <h2 class="favoritos">favoritos!</h2>
+      <h2 class="hora">hora de</h2>
+      <h2 class="trocar">trocar ideias!</h2>
     </div>
     <div class="enunciado">
-      <p>brinquedos</p>
-      <p id="cinza">utilizadores</p>
-      <p id="cinza">pesquisas</p>
-      <p id="cinza">pedidos</p>
+      <p>mensagens</p>
+      <p id="cinza">notificações</p>
+    </div>
+    <div class="cardNotificacoes">
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
+      <h1>CARD</h1>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: "NotificacoesFavoritos",
+  name: "NotificacoesTela",
 };
 </script>
 
 <style>
-.notificacoesFavoritos {
+.notificacoesTela {
   z-index: 99;
   width: 100%;
   height: 210px;
@@ -42,12 +50,12 @@ export default {
   top: 50px;
   left: 30px;
 }
-.boasvindas {
+.hora {
   font-family: Open sans-serif;
   line-height: 22px;
   font-weight: bold;
 }
-.favoritos {
+.trocar {
   color: #f06943;
   line-height: 23px;
   font-weight: bold;
@@ -65,5 +73,6 @@ export default {
 #cinza {
   font-family: Open sans-serif;
   color: #aca9a5;
+  margin-left: 40px;
 }
 </style>
