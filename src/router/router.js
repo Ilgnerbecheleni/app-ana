@@ -15,7 +15,7 @@ const routes = [
     name: "HomeTela",
     component: HomeTela
   },
-    {
+  {
     path: "/vender",
     name: "VenderTela",
     component: VenderTela
@@ -43,7 +43,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-    routes
-  });
+  routes
+});
 
 export default router;
