@@ -122,7 +122,7 @@ export default {
 
 <style>
 .menu {
-  width: 100%;
+  width: 360px;
   height: 80px;
   background-color: #fcfaf8;
   position: fixed;

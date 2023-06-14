@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="vender-container">
     <Vender />
 
     <H2>VENDER</H2>
@@ -29,5 +29,9 @@ export default {
 </script>
 
 <style scoped>
-
+.vender-container{
+  width: 360px;
+  padding: 0;
+  height: 100vh;
+}
 </style>

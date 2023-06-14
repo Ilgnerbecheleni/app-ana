@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .favoritos-view {
   padding-top: 210px;
-height: 70vh;
+
 }
 
 .linkcard {
@@ -78,7 +78,7 @@ height: 70vh;
 }
 
 .content {
-  margin-left: 15px;
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;

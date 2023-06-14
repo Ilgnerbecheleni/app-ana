@@ -22,7 +22,7 @@ export default {
 <style>
 .cabecalhoFavoritos {
   z-index: 99;
-  width: 100%;
+  width: 360px;
   height: 210px;
   background-color: rgb(172, 156, 156);
   position: fixed;

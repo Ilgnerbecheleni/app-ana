@@ -36,6 +36,6 @@ export default {
 <style scoped>
 .notificacoes {
   padding-top: 210px;
-  
+  height: 122vh;
 }
 </style>

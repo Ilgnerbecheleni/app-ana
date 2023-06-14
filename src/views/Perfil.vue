@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="perfil-container">
     <h1>Tela Perfil</h1>
     <MenuItem
       :should-display="shouldDisplay"
@@ -29,4 +29,9 @@ export default { name: "PerfilTela", components: { MenuItem, CardPessoa } ,
   },};
 </script>
 
-<style scoped></style>
+<style scoped>
+.perfil-container{
+  height: 100vh;
+ 
+}
+</style>

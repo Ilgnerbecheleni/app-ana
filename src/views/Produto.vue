@@ -62,7 +62,8 @@ export default {
 .product{
   width:360px ;
   margin-top: 0;
-  height: 100%;
+  padding-top: 0;
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -126,7 +127,7 @@ button {
 
 .imgProduto {
   margin-top: 0;
-  width: 380px;
+  width: 370px;
 }
 
 .image-produto-principal{
